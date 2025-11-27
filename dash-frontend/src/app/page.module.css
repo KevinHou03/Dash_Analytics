@@ -1,0 +1,69 @@
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: var(--background);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 2rem;
+    z-index: 1;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    font-size: 8vw;
+}
+
+.dash {
+    color: var(--on-background);
+    font-family: var(--secondary-font), serif;
+}
+
+.analytics {
+    color: var(--primary);
+    font-family: var(--secondary-font), serif;
+}
+
+.heroVideo {
+    position: absolute;
+    object-fit: cover;
+    height: 65vh;
+    width: 130vh;
+    transform: rotate(-90deg) translateX(25%) translateY(50%);
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/* BUTTONS: SIGN UP & ABOUT */
+.heroBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-top: 2rem;
+    transform: translateX(-8em);
+}
+
+/* @media (prefers-reduced-motion) {
+    
+} */
+
+/* Mobile */
+/* @media (max-width: 700px) {
+  
+} */
+
+/* Tablet and Smaller Desktop */
+/* @media (min-width: 701px) and (max-width: 1120px) {
+  
+} */

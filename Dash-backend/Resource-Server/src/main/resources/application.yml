@@ -1,0 +1,44 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: Resource-Server
+
+  autoconfigure:
+    exclude:
+      - org.springframework.cloud.aws.autoconfigure.context.ContextInstanceDataAutoConfiguration
+      - org.springframework.cloud.aws.autoconfigure.context.ContextStackAutoConfiguration
+
+  servlet:
+    multipart:
+      max-file-size: 4MB
+
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: https://auth.dash-analytics.solutions
+
+application:
+  bucket: dash-analytics-test
+
+cloud:
+  aws:
+    region:
+      static: us-east-2
+    stack:
+      auto: false
+
+openai:
+  model:
+    version: gpt-3.5-turbo
+  credentials:
+    secret-key: ${GPT_API_KEY}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://dash-app-registry:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
