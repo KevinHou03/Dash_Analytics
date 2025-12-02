@@ -109,13 +109,5 @@ using the following commands:
 
 <br>
 
-## Learn More
 
-To learn more about this project, visit our [website](https://dash-analytics.solutions) or contact one of the team members below:
 
-- Justin Lurie: justin.lurie@emory.edu
-- George Morales: george.morales@emory.edu
-- Jason Lebov: jason.lebov@emory.edu
-- Vera Wen: vera.wen@emory.edu
-- Kevin Hou: khou6@emory.edu
-- Tim McGarry: tim.mcgarry@emory.edu
